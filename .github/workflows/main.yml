@@ -5,12 +5,12 @@ on:
 
   # to run this workflow manually from the Actions tab
   workflow_dispatch:
-
+            
 jobs:
   sync-to-hub:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: nateraw/huggingface-sync-action@v0.0.5
         with:
           fetch-depth: 0
           lfs: true
